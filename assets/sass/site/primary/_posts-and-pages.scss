@@ -3,7 +3,7 @@
         display: block;
         padding: 20px;
         @media screen and (min-width: $tabwidth){
-            padding: 12%;
+            padding: 12% 12% 5% 12%;
         }
         >.outer-wrapper {
             width: 100%;
