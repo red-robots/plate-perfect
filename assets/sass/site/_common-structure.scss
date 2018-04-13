@@ -8,7 +8,7 @@
 }
 .copy {
   font-size: 16px;
-  color: black;
+  color: $color__text-main;
   @media screen and (min-width: $tabwidth){
     font-size: 18px;
   }
@@ -28,7 +28,7 @@
   }
   a {
     text-decoration: none;
-    color: black;
+    color: $color__text-main;
     position: relative;
     &:hover {
       color: black;
@@ -37,7 +37,7 @@
   h1, h2, h3 {
     margin: 0 0 10px 0;
     text-transform: uppercase;
-    color: black;
+    color: $color__text-main;
     font-family: $font-header;
     font-weight: normal;
   }
@@ -58,7 +58,7 @@
       margin: 0 0 0 20px;
       font-size: inherit;
       padding: 0;
-      list-style-type: square;
+      list-style-type: disc;
       a {
         cursor: pointer;
         &:hover {

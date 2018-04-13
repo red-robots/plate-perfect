@@ -587,7 +587,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:black;font-family:"Open Sans",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:#585149;font-family:"Open Sans",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -734,20 +734,20 @@ html[xmlns] .flexslider .slides{display:block}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
 .clear-bottom:after{clear:both;content:"";display:block}
-.copy{font-size:16px;color:black}
+.copy{font-size:16px;color:#585149}
 @media screen and (min-width:600px){.copy{font-size:18px}
 }.copy>*:first-child{margin-top:0;padding-top:0}
 .copy>*:last-child{margin-bottom:0;padding-bottom:0}
 .copy p{margin:20px 0}
 .copy strong,.copy b,.copy em{font-weight:800}
-.copy a{text-decoration:none;color:black;position:relative}
+.copy a{text-decoration:none;color:#585149;position:relative}
 .copy a:hover{color:black}
-.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:black;font-family:"Bree Serif",serif;font-weight:normal}
+.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:#585149;font-family:"Bree Serif",serif;font-weight:normal}
 .copy h1{font-size:30px}
 .copy h2{font-size:25px}
 .copy h3{font-size:20px}
 .copy ul,.copy ol{padding:0;margin:0 0 20px 20px;font-size:inherit}
-.copy ul li,.copy ol li{margin:0 0 0 20px;font-size:inherit;padding:0;list-style-type:square}
+.copy ul li,.copy ol li{margin:0 0 0 20px;font-size:inherit;padding:0;list-style-type:disc}
 .copy ul li a,.copy ol li a{cursor:pointer}
 .copy ul li a:hover,.copy ol li a:hover{color:black}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
@@ -756,8 +756,8 @@ html[xmlns] .flexslider .slides{display:block}
 .row-1.header-wrapper>.overlay.row-1.no-background>.background-image{background-image:none !important}
 .row-1.header-wrapper>.overlay.row-1.image-present{width:100%;padding:20px;position:fixed;top:0;left:0;z-index:4}
 .row-1.header-wrapper>.overlay.row-1.image-absent{width:100%;padding:20px}
-@media screen and (min-width:600px){.row-1.header-wrapper>.overlay.row-1.image-absent>.row-2 ul li a{color:black}
-.row-1.header-wrapper>.overlay.row-1.image-absent>.row-2 ul li a:hover{color:black}
+@media screen and (min-width:600px){.row-1.header-wrapper>.overlay.row-1.image-absent>.row-2 ul li a{color:#585149}
+.row-1.header-wrapper>.overlay.row-1.image-absent>.row-2 ul li a:hover{color:#585149}
 }.row-1.header-wrapper>.overlay.row-1.minimized:before{background:-webkit-linear-gradient(bottom,transparent,black,transparent);background:-webkit-linear-gradient(top,transparent,black,transparent);background:linear-gradient(to bottom,transparent,black,transparent)}
 .row-1.header-wrapper>.overlay.row-1:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;opacity:.5;background:-webkit-linear-gradient(bottom,black,black,black,black,transparent);background:-webkit-linear-gradient(top,black,black,black,black,transparent);background:linear-gradient(to bottom,black,black,black,black,transparent)}
 .row-1.header-wrapper>.overlay.row-1>.background-image{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-2;background-position:bottom;background-size:cover}
@@ -791,10 +791,10 @@ html[xmlns] .flexslider .slides{display:block}
 }#colophon{padding:20px;color:#9e9e9e;font-size:16px}
 @media screen and (min-width:600px){#colophon{padding:1% 3% 3% 3%}
 }#colophon a{display:inline-block;margin:0 20px;text-decoration:none;color:#9e9e9e}
-#colophon a:hover{color:black}
+#colophon a:hover{color:#585149}
 #colophon>.row-1{text-align:center;margin:0 0 20px 0}
 #colophon>.row-1 a{display:inline-block;margin:0 20px;text-decoration:none;color:#9e9e9e;font-size:30px}
-#colophon>.row-1 a:hover{color:black}
+#colophon>.row-1 a:hover{color:#585149}
 #colophon>.row-2{font-size:16px;text-align:center}
 #colophon>.row-2 .address-line-2{margin:0 0 20px 0}
 #colophon>.row-2 .fax{margin:0 0 20px 0}
