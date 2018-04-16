@@ -94,12 +94,10 @@ jQuery(document).ready(function ($) {
 				});
 				$overlay_row_1.css({
 					float: "left",
-					// width: "100px",
 					width: "200px",
 				});
 				$overlay_row_2.css({
 					float: "left",
-					// marginTop: 20,
 					width: "calc(100% - 200px)",
 				});
 				if($window.scrollTop() + $overlay.outerHeight() >= $row_2.offset().top + $row_2.outerHeight()){
@@ -141,12 +139,11 @@ jQuery(document).ready(function ($) {
 					});
 					$overlay_row_1.css({
 						float: "left",
-						width: "100px",
+						width: "200px",
 					});
 					$overlay_row_2.css({
 						float: "left",
-						marginTop: 20,
-						width: "calc(100% - 100px)",
+						width: "calc(100% - 200px)",
 					});
 					if($window.scrollTop() + $overlay.outerHeight() >= $row_2.offset().top + $row_2.outerHeight()){
 						$overlay.css({

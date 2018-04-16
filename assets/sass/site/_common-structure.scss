@@ -109,11 +109,7 @@
         }
         &.minimized {
           &:before {
-            background: -webkit-linear-gradient(bottom, transparent ,black,transparent ); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(bottom, transparent ,black,transparent); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(bottom, transparent ,black,transparent); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to bottom, transparent ,black,transparent); /* Standard syntax */		
-          }
+           }
         }
         &:before {
           content: "";
@@ -124,10 +120,6 @@
           height: 100%;
           z-index: -1;
           opacity: 0.5;
-          background: -webkit-linear-gradient(bottom, black ,black,black,black,transparent ); /* For Safari 5.1 to 6.0 */
-          background: -o-linear-gradient(bottom, black ,black,black,black,transparent); /* For Opera 11.1 to 12.0 */
-          background: -moz-linear-gradient(bottom, black ,black,black,black,transparent); /* For Firefox 3.6 to 15 */
-          background: linear-gradient(to bottom, black ,black,black,black,transparent); /* Standard syntax */	
         }
         >.background-image {
           position: absolute;
@@ -245,26 +237,37 @@
         ul.slides {
             li {
               position: relative;
-                img {
+              &:after {
+                background-color: rgba(0,0,0,0.2);
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                content: "";
+              }
+              img {
 
+              }
+              .testimonial {
+                color: white;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                z-index: 3;
+                text-align: center;
+                @include translatexy(-50%,-50%);
+                width: 80%;
+                font-size: 18px;
+                text-shadow: 1px 1px 1px grey;
+                font-weight: 700;
+                @media screen and (min-width: $midwidth){
+                  width: 50%;
+                  top: 50%;
+                  font-size: 25px;
                 }
-                .testimonial {
-                  color: white;
-                  position: absolute;
-                  top: 60%;
-                  left: 50%;
-                  text-align: center;
-                  @include translatexy(-50%,-50%);
-                  width: 80%;
-                  font-size: 18px;
-                  text-shadow: 1px 1px 1px grey;
-                  font-weight: 700;
-                  @media screen and (min-width: $midwidth){
-                    width: 50%;
-                    top: 50%;
-                    font-size: 25px;
-                  }
-                }
+              }
             }
         }
     }
