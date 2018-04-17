@@ -27,6 +27,7 @@ jQuery(document).ready(function ($) {
 		$('.flexslider').flexslider({
 			animation: "fade",
 			start: check_header,
+			smoothHeight: true,
 			prevText: '<i class="fa fa-chevron-circle-left"></i>',
 			nextText: '<i class="fa fa-chevron-circle-right"></i>',
 		}); // end register flexslider
