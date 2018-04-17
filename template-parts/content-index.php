@@ -52,23 +52,26 @@
 	<?php $page_picker = get_field("page_picker");
 	if($page_picker):?>
 		<div class="row-2 clear-bottom">
-			<?php foreach($page_picker as $row):?>
-				<?php if($row['page']):
-					$post = get_post($row['page']);
-					setup_postdata( $post );
-					$image = get_field("link_background_image");
-					if($image):?>
-						<div class="outer-wrapper js-blocks" style="background-image:url(<?php echo $image['sizes']['large'];?>);">
-							<a href="<?php echo get_the_permalink();?>">
-								<div class="inner-wrapper" >
-									<?php the_title();?>
-								</div><!--.inner-wrapper-->
+			<div id="container">
+				<?php foreach($page_picker as $row):?>
+					<?php if($row['page']):
+						$post = get_post($row['page']);
+						setup_postdata( $post );
+						$image = get_field("link_background_image");
+						if($image):?>
+							<a class="item" href="<?php echo get_the_permalink();?>">
+								<div class="outer-inner-wrapper">
+									<img src="<?php echo $image['sizes']['large'];?>">
+									<div class="inner-wrapper" >
+										<?php the_title();?>
+									</div><!--.inner-wrapper-->
+								</div><!--.outer-inner-wrapper-->
 							</a>
-						</div><!--.outer-wrapper-->
-					<?php endif;
-					wp_reset_postdata();
-				endif;?>
-			<?php endforeach;?>
+						<?php endif;
+						wp_reset_postdata();
+					endif;?>
+				<?php endforeach;?>
+			</div><!--#container-->
 		</div><!--.row-2-->
 	<?php endif;?>
 </article><!-- #post-## -->
