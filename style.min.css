@@ -797,6 +797,7 @@ html[xmlns] .flexslider .slides{display:block}
 #colophon>.row-1 a:hover{color:#585149}
 #colophon>.row-2{font-size:16px;text-align:center}
 #colophon>.row-2 .address-line-2{margin:0 0 20px 0}
+#colophon>.row-2 .telephone a{margin:0}
 #colophon>.row-2 .fax{margin:0 0 20px 0}
 .template-index>.row-2{display:block;padding:20px}
 @media screen and (min-width:600px){.template-index>.row-2{padding:12% 12% 5% 12%}
