@@ -221,7 +221,7 @@
                         font-size: 12px;
                     }
                     @media screen and (min-width: $deskwidth){
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -235,12 +235,14 @@
                 }
             }
             .email-icon {
-
                 @media screen and (min-width: $tabwidth){
                     
                 }
                 @media screen and (min-width: $midwidth){
                     display: none;
+                }
+                a {
+                    color: inherit;
                 }
             }
         }

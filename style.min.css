@@ -740,8 +740,8 @@ html[xmlns] .flexslider .slides{display:block}
 .copy>*:last-child{margin-bottom:0;padding-bottom:0}
 .copy p{margin:20px 0}
 .copy strong,.copy b,.copy em{font-weight:800}
-.copy a{text-decoration:none;color:#585149;position:relative}
-.copy a:hover{color:black}
+.copy a{text-decoration:none;color:#e68f1a;position:relative}
+.copy a:hover{text-decoration:underline}
 .copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:#585149;font-family:"Bree Serif",serif;font-weight:normal}
 .copy h1{font-size:30px}
 .copy h2{font-size:25px}
@@ -841,11 +841,12 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-about .team .member .title{font-size:16px}
 }.template-about .team .member .email a,.template-about .team .member .phone a{font-size:12px;text-decoration:none;color:inherit}
 @media screen and (min-width:600px){.template-about .team .member .email a,.template-about .team .member .phone a{font-size:12px}
-}@media screen and (min-width:1200px){.template-about .team .member .email a,.template-about .team .member .phone a{font-size:16px}
+}@media screen and (min-width:1200px){.template-about .team .member .email a,.template-about .team .member .phone a{font-size:14px}
 }.template-about .team .member .email{display:none}
 @media screen and (min-width:900px){.template-about .team .member .email{display:block}
 }@media screen and (min-width:900px){.template-about .team .member .email-icon{display:none}
-}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+}.template-about .team .member .email-icon a{color:inherit}
+.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
