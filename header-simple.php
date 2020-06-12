@@ -35,11 +35,12 @@
 	#inline_content {
 		max-width: 250px;
 		margin: 0 auto;
-		padding-top: 50px;
+		padding: 50px 20px 20px 20px ;
 	}
 	@media screen and (min-width: 600px) {
 		#inline_content {
 			max-width: 500px;
+			border: 5px solid #dd8919;
 		}
 	}
 	@media screen and (min-width: 1000px) {
