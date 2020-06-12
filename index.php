@@ -33,6 +33,5 @@ get_header("simple"); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php
-get_footer();
+<!-- still here? -->
+<?php get_footer();

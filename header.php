@@ -20,6 +20,7 @@
 <script src="https://use.fontawesome.com/762c66dd2b.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131407606-1"></script>
+<link rel='stylesheet' id='colorbox-css'  href='<?php bloginfo('template_url'); ?>/colorbox.css?ver=5.4.2' type='text/css' media='all' />
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -31,6 +32,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	
 
 <a name="top"></a>
 <div id="page" class="site">

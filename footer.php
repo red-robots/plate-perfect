@@ -10,7 +10,7 @@
  */
 
 ?>
-
+<!-- footer -->
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -69,7 +69,22 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
+<?php wp_footer(); 
+$active = get_field('turn_on', 'option');
+if( $active[0] == 'yes' && is_front_page() ) {
+?>
+<?php if(is_front_page()) { ?>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			// Popup
+			$.colorbox({
+				inline:true,
+				// maxWidth: 80%,
+				href:".ajax"
+			});
+		});
+	</script>
+<?php } } ?>
 
 </body>
 </html>
