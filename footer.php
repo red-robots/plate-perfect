@@ -35,7 +35,9 @@
 			$fax = get_field("fax","option");
 			$telephone_prefix = get_field("telephone_prefix","option");
 			$fax_prefix = get_field("fax_prefix","option");
-			$copyright = get_field("copyright","option");?>
+			$copyright = get_field("copyright","option");
+			$copyright = date('Y') . ' ' . $copyright;
+			?>
 			<?php if($address_line_1):?>
 				<div class="address-line-1">
 					<?php echo $address_line_1;?>
@@ -65,6 +67,7 @@
 					<?php echo $copyright;?>
 				</div><!--.copyright-->
 			<?php endif;?>
+			<div class="siteby">Designed by <a href="https://bellaworksweb.com" target="_blank">BW</a></div>
 		</div><!--.row-2-->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
