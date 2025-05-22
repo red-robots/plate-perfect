@@ -6,7 +6,20 @@
  *	Developed by: Austin Crane	
  *	Designed by: Austin Crane
  */
+
 jQuery(document).ready(function ($) {
+  /* Order Option */
+  $(document).on("click", "#orderOption", function (e) {
+    e.preventDefault();
+    if ($("div.order-options").length > 0) {
+      $("div.order-options").slideToggle(300);
+    }
+  });
+  $(document).on("click", "#closeOrder", function (e) {
+    e.preventDefault();
+    $("#orderOption").trigger('click');
+  });
+
   /*
   *
   *	Current Page Active
@@ -17,12 +30,12 @@ jQuery(document).ready(function ($) {
       $(this).addClass("active");
     }
   });
+
   /*
   *
   *	Flexslider
   *
   ------------------------------------*/
-
   $('.flexslider').imagesLoaded(function () {
     $('.flexslider').flexslider({
       animation: "fade",
@@ -37,18 +50,17 @@ jQuery(document).ready(function ($) {
   *	Colorbox
   *
   ------------------------------------*/
-
   $('a.gallery').colorbox({
     rel: 'gal',
     width: '80%',
     height: '80%'
   });
+
   /*
   *
   *	Isotope with Images Loaded
   *
   ------------------------------------*/
-
   var $container = $('#container').imagesLoaded(function () {
     $container.isotope({
       // options
@@ -58,21 +70,20 @@ jQuery(document).ready(function ($) {
       }
     });
   });
+
   /*
   *
   *	Equal Heights Divs
   *
   ------------------------------------*/
-
   $('.js-blocks').matchHeight();
+
   /*
   *
   *	Wow Animation
   *
   ------------------------------------*/
-
   new WOW().init();
-
   function check_header() {
     var $window = $(window);
     var $page = $('#page');
@@ -84,10 +95,8 @@ jQuery(document).ready(function ($) {
     var $logo_as = $logo.find('a');
     var $hidden_logo = $logo.find('a.hidden');
     var $row_2 = $wrapper.find('>.row-2');
-
     if (window.innerWidth > 599) {
       $page.css("paddingTop", '');
-
       if ($window.scrollTop() + $overlay.outerHeight() + Number($overlay.css("top").replace(/[^0-9]/g, '')) >= $wrapper.offset().top + $wrapper.outerHeight()) {
         $overlay.addClass('minimized');
         $logo_as.css("display", "none");
@@ -103,7 +112,6 @@ jQuery(document).ready(function ($) {
           float: "left",
           width: "calc(100% - 200px)"
         });
-
         if ($window.scrollTop() + $overlay.outerHeight() >= $row_2.offset().top + $row_2.outerHeight()) {
           $overlay.css({
             top: 0
@@ -134,7 +142,6 @@ jQuery(document).ready(function ($) {
           top: ""
         });
         $overlay.addClass("no-background");
-
         if ($window.scrollTop() + $overlay.outerHeight() + Number($overlay.css("top").replace(/[^0-9]/g, '')) >= $wrapper.offset().top + $wrapper.outerHeight()) {
           $overlay.addClass('minimized');
           $logo_as.css("display", "none");
@@ -150,7 +157,6 @@ jQuery(document).ready(function ($) {
             float: "left",
             width: "calc(100% - 200px)"
           });
-
           if ($window.scrollTop() + $overlay.outerHeight() >= $row_2.offset().top + $row_2.outerHeight()) {
             $overlay.css({
               top: 0
@@ -168,16 +174,13 @@ jQuery(document).ready(function ($) {
       $page.css("paddingTop", $overlay.outerHeight());
     }
   }
-
   if ($('body.home').length === 0) {
     check_header();
   }
-
   $(window).scroll(check_header);
   $(window).resize(check_header);
   $('.header-wrapper >.overlay >.row-2 .bars').click(function () {
     var $menu = $('.header-wrapper >.overlay >.row-2 .menu-primary-container');
-
     if ($menu.hasClass("active")) {
       $menu.removeClass("active");
     } else {

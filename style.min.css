@@ -278,6 +278,22 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-control-thumbs .flex-active{opacity:1;cursor:default}
 .widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
+.topmenu{display:inline-block;position:absolute;top:30px;right:20px;z-index:50}
+.topmenu .links{display:inline-block;float:right}
+.topmenu a,.topmenu #resyButton-9PTNB768ZJ{display:inline-block;text-decoration:none;color:#FFF;text-transform:uppercase;font-size:14px;line-height:1.2;padding:6px 14px;float:left;position:relative;z-index:30;cursor:pointer}
+.topmenu a.green,.topmenu #resyButton-9PTNB768ZJ.green{background:#000}
+.topmenu a.green:hover,.topmenu #resyButton-9PTNB768ZJ.green:hover{background:#333}
+.topmenu a.orange,.topmenu #resyButton-9PTNB768ZJ.orange{background:#e68f19}
+.topmenu a.orange:hover,.topmenu #resyButton-9PTNB768ZJ.orange:hover{background:#eba547}
+.order-options{display:none;width:100%;float:left;background:#e68f19;color:#FFF;position:absolute;top:28px;right:0;-webkit-box-shadow:0 5px 8px 0 rgba(0,0,0,0.35);box-shadow:0 5px 8px 0 rgba(0,0,0,0.35);-webkit-border-bottom-right-radius:6px;-webkit-border-bottom-left-radius:6px;-moz-border-radius-bottomright:6px;-moz-border-radius-bottomleft:6px;border-bottom-right-radius:6px;border-bottom-left-radius:6px}
+.order-options .closediv{text-align:center;width:100%;float:left;padding-top:10px;padding-bottom:10px}
+.order-options .closediv #close-order{cursor:pointer;text-decoration:none;display:inline-block;color:#FFF;padding:2px 0 2px;text-transform:uppercase;font-size:11px;line-height:1;font-weight:400;float:none;border-bottom:1px solid #FFF;position:relative;top:-2px}
+.order-options .closediv #close-order:hover{opacity:.65}
+.order-options .orderlink{width:100%;float:left}
+.order-options .orderlink a{display:block;float:left;position:relative;padding:12px 10px;color:#FFF;width:100%;border-bottom:1px dotted rgba(255,255,255,0.35);display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.order-options .orderlink a:hover{background:#eba547}
+.order-options .orderlink a img{width:25%;height:auto;border-radius:100%;border:1px solid #FFF}
+.order-options .orderlink a span.text{display:block;font-size:12px;line-height:1.3;text-transform:none;width:75%;padding-left:10px}
 .clear-bottom:after{clear:both;content:"";display:block}
 .copy{font-size:16px;color:#585149}
 .copy>*:first-child{margin-top:0;padding-top:0}
@@ -296,7 +312,7 @@ html[xmlns] .flexslider .slides{display:block}
 .copy ul li a:hover,.copy ol li a:hover{color:black}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
 .row-1.header-wrapper{width:100%}
-.row-1.header-wrapper>.overlay.row-1{width:100%;overflow:hidden}
+.row-1.header-wrapper>.overlay.row-1{width:100%}
 .row-1.header-wrapper>.overlay.row-1.no-background>.background-image{background-image:none !important}
 .row-1.header-wrapper>.overlay.row-1.image-present{width:100%;padding:20px;position:fixed;top:0;left:0;z-index:4}
 .row-1.header-wrapper>.overlay.row-1.image-absent{width:100%;padding:20px}

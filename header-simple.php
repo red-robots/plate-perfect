@@ -28,7 +28,17 @@
 
   gtag('config', 'UA-131407606-1');
 </script>
-<?php wp_head(); ?>
+<?php 
+
+wp_head(); 
+
+$online_ordering = get_field('online_ordering', 'option');
+// echo 'tush';
+// echo '<pre>';
+// print_r($online_ordering);
+// echo '</pre>';
+
+?>
 </head>
 <!-- simple -->
 <style type="text/css">

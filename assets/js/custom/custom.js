@@ -7,6 +7,20 @@
 
 jQuery(document).ready(function ($) {
 	
+	/* Order Option */
+    $(document).on("click","#orderOption",function(e){
+    	e.preventDefault();
+    	if( $("div.order-options").length > 0 ) {
+    		$("div.order-options").slideToggle(300);
+    	}
+    });
+
+    $(document).on("click","#closeOrder",function(e){
+    	e.preventDefault();
+    	$("#orderOption").trigger('click');
+    });	
+
+
 	/*
 	*
 	*	Current Page Active
